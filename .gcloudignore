@@ -12,6 +12,8 @@
 # below:
 .git
 .gitignore
+README.md
+README(es).md
 
 # Python pycache:
 __pycache__/
