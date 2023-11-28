@@ -1,0 +1,18 @@
+header{
+    background-color: #05668d;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: white;
+    margin: 0;
+}
+
+@media (max-width: 1040px) {
+    header h1{
+        text-align: center;
+    }
+}
