@@ -1,0 +1,121 @@
+.contenedor-botones{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    border: .5px solid gray;
+}
+
+.contenedor-botones form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.contenedor-botones input[type="file"]{
+    display: none;
+}
+
+.contenedor-botones .subir-personalizado{
+    background-color: white;
+    border: none;
+    color: #489fb5;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid #489fb5;
+    border-radius: 20px;
+    padding: 8px;
+    margin-right: 5vw;
+}
+
+.contenedor-botones .subir-personalizado:hover{
+    background-color: #489fb5;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border: 3px solid #489fb5;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.contenedor-botones .subir-personalizado:hover #icono-subir{
+    color: white;
+}
+
+.contenedor-botones #procesar{
+    background-color: white;
+    border: none;
+    color: #489fb5;
+    font-size: 18px;
+    border: 3px solid #489fb5;
+    border-radius: 20px;
+    padding: 8px;
+    /* margin-right: 5vw; */
+}
+
+.contenedor-botones #procesar:hover{
+    background-color: #489fb5;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border: 3px solid #489fb5;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.contenedor-botones #procesar:hover #icono-procesar{
+    color: white;
+}
+
+
+.contenedor-botones #icono-subir, #icono-procesar{
+    color: #489fb5;
+    font-size: 20px;
+}
+
+
+@media (max-width: 1040px) {
+    .contenedor-botones{
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        /* width: 90vw; */
+    }
+    .contenedor-botones #formulario-verde{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 765px) {
+    .contenedor-botones{
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenedor-botones #formulario-verde{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 492px) {
+
+    .contenedor-botones .subir-personalizado{
+        margin-bottom: 20px;
+        margin-right: 0vw;
+    }
+}

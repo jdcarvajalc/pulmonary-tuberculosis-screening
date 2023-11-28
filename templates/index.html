@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Herramienta apoyo diagnóstico PTB</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='app_image_resources/rayos-x.png') }}" type="image/png">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/header.css">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <link rel="stylesheet" href="../static/css/footer.css">
+        <link rel="stylesheet" href="../static/css/botones.css">
+        <link rel="stylesheet" href="../static/css/datos.css">
+
+        <script src="https://kit.fontawesome.com/00121ead02.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Procesamiento de imágenes de Rayos X torácicos</h1>
+        </header>
+        
+        <main>
+            <div class="contenedor-botones">
+                <form id="formulario-verde" action="/" method="post" enctype="multipart/form-data">
+                    <label class="subir-personalizado">
+                        <i class="fa fa-upload" id="icono-subir"></i>
+                        Subir imagen
+                        <input type="file" name="image" accept="image/*">
+                    </label>
+                    
+                    <button id="procesar" type="submit">
+                        <i class="fa fa-gear" id="icono-procesar"></i> 
+                        Procesar Imagen
+                    </button>
+                </form>
+            </div>
+            
+            {% if bandera_imagen_procesada %}
+                
+                <div class="contenedor-datos">
+                    <div class="contenedor-titulo-imagenes">
+                        <h2>Imagen Original</h2>
+                        <h2>Imagen Procesada</h2>
+                    </div>
+                    <div class="contenedor-imagenes">
+                        <h2 id="texto-imagen-original">Imagen Original</h2>
+                        <img src="{{ url_for('static', filename='images/' + imagen_original) }}" alt="Imagen original">
+                        <h2 id="texto-imagen-procesada">Imagen Procesada</h2>
+                        <img src="{{ url_for('static', filename='images/' + imagen_procesada) }}" alt="Imagen procesada">
+                    </div>
+                    <div class="contenedor-prediccion">
+                        <h2 id="etiqueta">Predicción:  </h2>
+                        <h2 id="resultado">{{ clase_predicha }}</h2>
+                    </div>
+                </div>
+                
+            {% endif %}
+        </main>
+
+        <footer></footer>
+    </body>
+</html>

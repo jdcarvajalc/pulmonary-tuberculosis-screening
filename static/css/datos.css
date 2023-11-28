@@ -1,0 +1,138 @@
+.contenedor-datos{
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    width: 70vw;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #489fb5;
+    border: .5px solid gray;
+}
+
+.contenedor-datos h2{
+    margin: 0;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.contenedor-titulo-imagenes{
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-titulo-imagenes h2 {
+    margin: 0;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#texto-imagen-original{
+    display: none;
+}
+#texto-imagen-procesada{
+    display: none;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    /* height: 40vh; */
+}
+
+.contenedor-imagenes img {
+    max-width: 30%;
+    min-width: 25%;
+    height: auto;
+}
+
+.contenedor-prediccion{
+    margin: 10px;
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #f3722c;
+    background-color: #f3722c;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.contenedor-prediccion #etiqueta{
+    padding: 0;
+    color: white;
+}
+
+.contenedor-prediccion #resultado{
+    background-color: white;
+    color: #f3722c;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+@media (max-width: 1040px) {
+    header h1{
+        text-align: center;
+    }
+}
+
+@media (max-width: 765px) {
+    .contenedor-datos{
+        width: 75vw;
+    }
+    .contenedor-titulo-imagenes{
+        display: none;
+    }
+    #texto-imagen-original{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    #texto-imagen-procesada{
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .contenedor-imagenes{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-imagenes img {
+        max-width: 60cqw;
+        min-width: 50cqw;
+        height: auto;
+    }
+
+    .contenedor-prediccion{
+        width: 50cqw;
+        height: auto;
+    }
+
+    .contenedor-prediccion #resultado{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .contenedor-prediccion #resultado{
+        margin-top: 20px;
+    }
+}
