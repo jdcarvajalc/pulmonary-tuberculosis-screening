@@ -102,7 +102,7 @@ def index():
 
 #========================================================================================================================
 
-# Ejecutar la app de forma local y con depuración en terminal
+# Ejecutar la app
 if __name__ == '__main__':
     app.run()
 
