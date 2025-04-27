@@ -12,7 +12,7 @@ To run this project, you need the following requirements:
 
 ## Installation
 
-To install the requirements, you can run the following command in the terminal:
+To install the requirements, you can run the following command in your terminal:
 
 ```
 pip install -r requirements.txt
