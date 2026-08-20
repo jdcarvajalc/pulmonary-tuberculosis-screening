@@ -5,4 +5,4 @@ numpy==1.24.2
 opencv-python-headless
 Pillow==9.4.0
 tensorflow==2.15.0
-Werkzeug==3.0.
+Werkzeug==3.0.0
